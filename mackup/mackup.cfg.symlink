@@ -5,7 +5,7 @@
 # With the "dropbox" storage engine, Mackup will automatically figure out your
 # Dropbox folder.
 [storage]
-engine = dropbox
+# engine = dropbox
 
 # If you choose the "google_drive" storage engine instead, Mackup will figure
 # out where your Google Drive is and store your configuration files in it.
@@ -19,8 +19,8 @@ engine = dropbox
 # home directory.
 # The "path" setting is mandatory when using the "file_system" engine.
 # [storage]
-# engine = file_system
-# path = some/folder/in/your/home
+engine = file_system
+path = dotfiles
 # # or
 # path = /some/folder/in/your/root
 
@@ -43,10 +43,13 @@ aws
 flux
 iterm2
 moom
-oh-my-zsh
+#oh-my-zsh
 sourcetree
 sublime-text-3
 ssh
+vscode
+finalshell
+windterm
 
 # List of applications you want to ignore
 # One application name per line

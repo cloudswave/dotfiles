@@ -31,8 +31,8 @@
 # sudo pmset -a autopoweroffdelay 86400
 
 # Disable battery and power sleep mode
-sudo pmset -a standby 0
-sudo pmset -a autopoweroff 0
+#sudo pmset -a standby 0
+#sudo pmset -a autopoweroff 0
 
 # Disable the sound effects on boot
 # sudo nvram SystemAudioVolume=" "
@@ -144,10 +144,10 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 ###############################################################################
 
 # Disable local Time Machine snapshots
-sudo tmutil disablelocal
+# sudo tmutil disablelocal
 
 # Disable hibernation (speeds up entering sleep mode)
-sudo pmset -a hibernatemode 0
+# sudo pmset -a hibernatemode 0
 
 # Remove the sleep image file to save disk space
 # sudo rm /Private/var/vm/sleepimage
@@ -280,7 +280,7 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Down
 # defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Finder: show hidden files by default
-# defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -350,7 +350,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
 # Disable the warning before emptying the Trash
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
+# defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Empty Trash securely by default
 # defaults write com.apple.finder EmptyTrashSecurely -bool true

@@ -1,11 +1,10 @@
 [hub]
   protocol = https
 [user]
-  name = Amo Wu
-  email = amo260@gmail.com
-  signingkey = E77D0CB6
+  name = EthanZhu
+  email = ethanzhu@qq.com
 [credential]
-  helper = osxkeychain
+  helper = store
 [color]
   diff = auto
   status = auto
@@ -41,5 +40,3 @@
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
-[commit]
-  gpgsign = true
